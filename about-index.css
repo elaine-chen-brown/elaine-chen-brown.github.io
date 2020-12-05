@@ -1,0 +1,149 @@
+.body {
+    font-family: 'Montserrat';
+    letter-spacing: .08em;
+}
+
+/* typwriting name */
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2%;
+    margin-bottom: 1%;
+    letter-spacing: .05em;
+  }
+
+.no-typewriter h1 {
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 38px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+/* subheader */
+.subheader{
+    font-size: 17px;
+    margin-left: 2%;
+    letter-spacing: 0;
+}
+
+/* navigation bar */
+.nav-bar {
+    font-size: 20px;
+}
+
+.horizontal-bar{
+    list-style-type: none;
+    margin-top: -2%;
+    margin-right: 2%;
+    text-align: right;
+    letter-spacing: 0;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0.5%;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* unvisited link */
+.nav-link:link {
+    color: black;
+}
+  
+  /* visited link */
+.nav-link:visited {
+}
+  
+  /* mouse over link */
+.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+  /* selected link */
+.nav-link:active {
+    font-weight: bold;
+}
+
+/* projects grid */
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2%;
+}
+
+.image {
+    max-width: 30%;
+    max-height: 30%;
+    padding: 1%;
+    border-width: 1px;
+}
+
+/* about me */
+.about-me {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 6%;
+    font-size: 16px;
+}
+
+.blurb {
+    margin-top: 25%;
+    margin-right: 6%;
+    line-height: 1.4;
+}
+
+.me-pic {
+    width: 400px;
+    height: 400px;
+}
+
+.name {
+    font-weight: 900;
+}
+
+/* responsive to different screen sizes */
+@media only screen and (max-width: 800px)  {
+    .image{
+        max-width: 45%;
+        max-height: 45%;
+        margin-left: 2%;
+    }
+
+
+    .about-me {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blurb {
+        margin-top: 4%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .image{
+        max-width: 80%;
+        max-height: 80%;
+        margin-left: 8%;
+    }
+}
+
+.inline-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.inline-link:hover {
+    font-weight: bold;
+}

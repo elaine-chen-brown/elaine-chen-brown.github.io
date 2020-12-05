@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title> Elaine Chen - Responsive Redesign </title>
+    <link rel="stylesheet" href="design-index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <div class = "header-wrap">
+    <div class = "s-header">
+      <div class="no-typewriter">
+        <a href = "home.html" style = "text-decoration: none; color: black"> <h1> Elaine Chen </h1> </a>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class = "subheader"> CS + ENGLISH @BROWN UNIVERSITY </div>
+    
+    <!-- Nav Bar -->
+    <div class = "nav-bar">
+      <ul class = "horizontal-bar">
+        <li class = "nav-item"><a href="home.html" class = "nav-link" style = "font-weight: 800">Work</a></li>
+        <li class = "nav-item"><a href="about.html" class = "nav-link">About</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- PROJECT SPECIFIC -->
+    <div class = "body">
+    <!-- Header -->
+    <div class = "header"> Responsive Redesign Project </div>
+
+    <!-- Intro -->
+    <div class = "before-after-section"> 
+      <figure> 
+        <a href="http://www.vivianvandevelde.com"><img src = "vvv_orig.png" alt = "vivian vande velde's site" class = "bf-image"></a>
+        <figcaption class = "section-content"> Before </figcaption>
+      </figure>
+      <figure> 
+        <a href="https://aqueous-woodland-37429.herokuapp.com"><img src = "after.png" alt = "redesigned site" class = "bf-image"></a>
+        <!--<img src = "redesign_final.png" class = "bf-image"> -->
+        <figcaption class = "section-content"> After </figcaption>
+      </figure>
+    </div>
+
+    <!-- What Is Explanation -->
+    <div class = "section-header"> What Is Responsive Design? </div>
+    <div class = "section-content">
+      Responsive web design is an approach to web-based user interaces where
+      pages will render differently on different screen sizes.
+    </div>
+
+    <!-- Project Goal -->
+    <div class = "section">
+      <div class = "section-header"> Project Goal </div>
+      <div class = "section-content"> 
+        The goal of this project was to choose a webpage, identify its usability and accessibility problems, and create a responsive redesign of it through lo-fi and hi-fi prototyping and visual design.
+      </div>
+    </div>
+
+    <!-- The Task -->
+    <div class = "section">
+      <div class = "section-header"> Website Chosen </div>
+      <div class = "section-content"> 
+        For this project, I chose the homepage of author <a href="http://www.vivianvandevelde.com"> Vivian Vande Velde's website. </a>
+        <img src = "vsite.png" class = "vimage">
+      </div>
+      <div class = "section-content">
+        On this page, I identified several visual design problems:
+        <ul>
+          <li> Unresponsive layout 
+            <ul>
+              <li> Content doesn't wrap when screen width shrinks </li>
+              <li> Larger screens have leftover space on the right due to fixed content width </li>
+            </ul>
+          </li>
+          <br>
+          <li> Poor color choice
+            <ul>
+              <li> Variation of colors for navigation bar categories create lack of cohesion </li>
+            </ul>
+          </li>
+          <br>
+          <li> No grouping or hierarchy 
+            <ul>
+              <li> All content is put together on one long, scrollable page without subsections, making information unorganized and hard to find </li>
+            </ul>
+          </li>
+          <br>
+          <li> Low learnability 
+            <ul>
+              <li> No main point of focus on homepage is disorienting for users</li>
+              <li> No subcategories in navigation bar makes topics hard to find </li>
+              <li> "Attic room" is a confusing category name for users, as is the content contained in it (which is unrelated to attics, room, or each other) </li>
+            </ul>
+          </li>
+        </ul>
+        Additionally, when I ran the WAVE evaluation tool to test the site's accessibility, it returned 9 errors, 24 alerts, 2 contrast errors, and 1 structural element. While most of the alerts for the text of a link not being descriptive enough probably would not cause accessibility issues, since they were generally given in the context of "to see this interview, click here," the errors and alerts for very small text, language missing or invalid, very low contrast and no page regions could. When I ran a screen reader on the site, this lack of page regions resulted in VoiceOver not being able to navigate and differentiate between elements, instead grouping all the content together.
+      </div>
+    </div>
+
+    <!-- Redesign -->
+    <div class = "section">
+      <div class = "section-header"> Redesigned Prototypes </div>
+
+      <div class = "section-subheader"> Lo-Fi </div>
+      <div class = "section-content"> I created my lo-fi mock-ups using Balsamiq. Here, I tried to plan a layout that has groupings and hierarchy through its sections, subsections, and different sizes of text. I also chose more descriptive category names for the navigation bar to help with learnability and fixed the original site's layout issue of having too much blank space on the right. </div>
+      <img src = "desktop_wireframe.png" class = "wireframe-image">
+      <img src = "ipad_wireframe.png" class = "iphone-wireframe-image">
+      <img src = "iphone_wireframe.png" class = "iphone-wireframe-image">
+    
+      <div class = "section-subheader"> Hi-Fi </div>
+      <div class = "section-content"> I created my hi-fi wireframes using Figma. Here, I explanded on the layout of my lo-fi mock-ups and specified how my site would be responsive to different screen sizes using flexbox. I also used a more cohesive color palette than the original site's, chosen to match the cover of the current featured book. </div>
+        <img src = "desktop_prototype.png" class = "prototype-image">
+        <img src = "ipad_prototype.png" class = "iphone-prototype-image">
+        <img src = "iphone_prototype.png" class = "iphone-prototype-image">
+        <br>
+        <br>
+        <br>
+      <div class = "section-subheader"> Visual Design Style Guide </div>
+        <div class = "section-content"> I created my visual style guide using Figma. Here, I specified what typography and color palette I wanted to use, as well as the design of my interactive dropdown button. After testing my hi-fi prototype using WAVE, I also changed the navbar color to create a greater contrast with the text for better user accesibility.</div>
+        <img src = "design_guide.png" class = "prototype-image">
+        <br>
+        <br>
+    </div>
+
+    <!-- Final Product -->
+    <div class = "section">
+      <div class = "section-header"> Final Product </div>
+      <div class = "section-content"> Overall, my redesign aimed to fix the problems of layout, learnability, grouping/hierachy, and unresponsiveness that I identified in the original design. </div>
+      <img src = "final.png" class = "prototype-image">
+      <!--<img src = "redesign_final.png" class = "prototype-image">-->
+      <div class = "section-content"> 
+      See the finished product <a href="https://aqueous-woodland-37429.herokuapp.com">here</a>!
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>

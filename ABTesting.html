@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title> Elaine Chen - A/B Testing </title>
+    <link rel="stylesheet" href="ABTesting-index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <div class = "s-header">
+      <div class="no-typewriter">
+        <a href = "home.html" style = "text-decoration: none; color: black"> <h1> Elaine Chen </h1> </a>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class = "subheader"> CS + ENGLISH @BROWN UNIVERSITY </div>
+    
+    <!-- Nav Bar -->
+    <div class = "nav-bar">
+      <ul class = "horizontal-bar">
+        <li class = "nav-item"><a href="home.html" class = "nav-link" style = "font-weight: bold">Work</a></li>
+        <li class = "nav-item"><a href="about.html" class = "nav-link">About</a></li>
+      </ul>
+    </div>
+
+    <!-- PROJECT SPECIFIC -->
+    <div class = "body">
+    <!-- Header -->
+    <div class = "header"> A/B Testing Project </div>
+
+    <!-- Intro -->
+    <div class = "image-comp-section"> 
+      <figure> 
+        <a href="A.html" style = "text-decoration: none"><img src = "image_a.png" alt = "version A" class = "comp-image"></a>
+        <figcaption class = "section-content"> Version A </figcaption>
+      </figure>
+      <figure> 
+        <a href="B.html"><img src = "image_b.png" alt = "version B" class = "comp-image"> </a>
+        <figcaption class = "section-content"> Version B </figcaption>
+      </figure>
+    </div>
+
+    <!-- What Is Explanation -->
+    <div class = "section-header"> What Is A/B Testing? </div>
+    <div class = "section-content">
+      A/B testing is a method for UI research, where a small group of users
+      are shown a different version of a product and asked to interact with it.
+      Data is collected about their interactions, and the results are analyzed
+      to see whether the changes made from the original version had any
+      statistically significant impact on user behavior.
+    </div>
+
+    <!-- Project Goal -->
+    <div class = "section">
+      <div class = "section-header"> Project Goal </div>
+      <div class = "section-content"> 
+        The goal of this project was to create null and alternative hypotheses
+        for the time to completion and return rate for two variations of a website,
+        collect data through an A/B test, and perform a statistical analysis
+        on this data to either reject or not reject our initial hypotheses.
+        <br>
+        <br>
+        For my two website variations, I used version A as a control, following the
+        layout provided in the stencil code. I then used version B as a variation,
+        changing its layout to a grid with defined item separators and changing the
+        text on the buttton to say "Pick Me!" instead of "Adopt!".
+        <br>
+        <br>
+        The two versions were tested for time to completion and return rate on a
+        group of users tasked with filling their carts with $150 worth of kittens.
+      </div>
+    </div>
+
+
+    <!-- The Hypotheses -->
+    <div class = "section">
+      <div class = "section-header"> Hypotheses </div>
+      <div class = "section-subheader"> Time To Completion </div>
+      <div class = "section-content"> 
+        I hypothesized that my variation on the control --using a grid layout and "Pick Me!" button-- would lead to
+        a lower time to completion because users would not have to scroll down to 
+        see more item options and would be feel a sense of urgency and personal
+        connection to the task at hand.
+        <br>
+        <br>
+        <div class = "special">
+        My null hypothesis is that my variation on the control will not lead to a lower time to
+        completion.
+        </div>
+      </div>
+      <br>
+      <div class = "section-subheader"> Return Rate </div>
+      <div class = "section-content"> 
+        I hypothesized that my variation on the control --using a grid layout and "Pick Me!" button-- would lead to
+        a lower return rate because users would be able to fill up their carts to
+        $150 on the first try and would not need to return to the cart-filling page
+        to do so. They could also be compelled to add more items to their carts the
+        first time around due to the button text's personal appeal.
+        <br>
+        <br>
+        <div class = "special">
+        Myy null hypothesis is that my variation on the control will not lead to a lower return rate.
+      </div>
+      </div>
+    </div>
+
+    <!-- The Process -->
+    <div class = "section">
+      <div class = "section-header"> Process </div>
+      <div class = "section-content"> 
+        To collect my data, I had a group of anonymous users access my website through
+        a link, which yielded a 50% chance of showing them version A and a 50% chance of
+        showing them version B. They were then asked to interact with the site by filling
+        their carts up with at least $150 worth of items. I was then able to get the
+        timestamp data of each user's interaction with my site through Heroku's logs,
+        which records page loads and button presses, and compute each user's time to completion
+        and whether or not they returned.
+        <br>
+        <br>
+        In total, I collected relevant data from 22 users, 12 of whom interacted with version
+        A and 10 of whom interacted with version B.
+      </div>
+    </div>
+
+    <!-- The Results -->
+    <div class = "section">
+      <div class = "section-header"> Results </div>
+      <div class = "section-content">
+      </div>
+      <!-- Put infographic here -->
+      <img src = "infographic.jpg" class = "image">
+    </div>
+
+    <!-- Takeaways -->
+    <div class = "section">
+      <div class = "section-header"> Takeaways </div>
+      <div class = "section-content">
+        Although my statistical tests produced inconclusive results, I was able to learn some
+        broad takeaways on A/B testing in general:
+        <ul>
+          <li> Sample size could be a limitation on testing.
+            <ul>
+              <li> My study only had 22 participants. A larger sample size might have yielded
+                significant results.
+              </li>
+            </ul>
+          </li>
+          <li> Participant environment could be a limitation on testing.
+            <ul>
+              <li> All users in my study are enrolled in CS1300 and completed their tasks
+                during studio time. This does not accurately reflect the conditions under which
+                an actual user accesses a shopping website, where they would probably go in
+                with a mindset of exploration and take much longer weighing options before
+                adding them to their cart.
+              </li>
+            </ul>
+          </li>
+          <li> Other design principles could make a bigger impact on time to completion and
+            return rate than layout.
+            <ul>
+              <li> My study showed no significant difference between a single column layout and
+                a defined grid layout in terms of time to completion and return rate.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

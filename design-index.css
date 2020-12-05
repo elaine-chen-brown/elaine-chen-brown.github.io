@@ -1,0 +1,152 @@
+.body{
+    font-family: 'Montserrat';
+    letter-spacing: .08em;
+    padding: 3%;
+    line-height: 1.5;
+    color: rgb(64, 64, 64);
+    line-height: 1.4;
+}
+
+/* site header */
+.s-header {
+    font-family: 'Courier New';
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2%;
+    margin-bottom: 1%;
+    letter-spacing: .05em;
+  }
+
+.no-typewriter h1 {
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 38px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+/* subheader */
+.subheader{
+    font-size: 17px;
+    margin-left: 2%;
+    font-family: 'Montserrat'
+}
+
+/* navigation bar */
+.nav-bar {
+    font-size: 20px;
+    font-family: 'Montserrat'
+}
+
+.horizontal-bar{
+    list-style-type: none;
+    margin-top: -2%;
+    margin-right: 2%;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0.5%;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* unvisited link */
+.nav-link:link {
+    color: black;
+}
+  
+  /* visited link */
+.nav-link:visited {
+}
+  
+  /* mouse over link */
+.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+  /* selected link */
+.nav-link:active {
+    font-weight: bold;
+}
+
+/* PROJECT SPECIFIC CODE */
+/* header */
+.header{
+    font-size: 28px;
+    margin-top: -2%;
+}
+
+/* before and after section */
+
+.before-after-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 2%;
+}
+
+.bf-image{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.bf-image:hover {
+    opacity: 0.3;
+}
+
+/* section */
+.section{
+    margin-bottom: 24px;
+}
+.section-header{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.section-subheader{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: darkgrey;
+}
+.section-content{
+    font-size: 16px;
+}
+
+/* images */
+.vimage{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wireframe-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.iphone-wireframe-image {
+    max-width: 45%;
+    max-height: 45%;
+    margin: auto;
+}
+
+.prototype-image{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.iphone-prototype-image{
+    max-width: 30%;
+    max-height: 30%;
+}

@@ -1,0 +1,178 @@
+.body {
+    font-family: 'Montserrat';
+    letter-spacing: .08em;
+}
+
+/* typwriting name */
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2%;
+    margin-bottom: 1%;
+    letter-spacing: .05em;
+  }
+
+.typewriter h1 {
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 38px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-top: 1%;
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end 8;
+}
+
+.no-typewriter h1 {
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 38px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor-gone {
+    from, to { border-color: transparent }
+    100% { border-color: transparent }
+}
+
+/* subheader */
+.subheader{
+    font-size: 17px;
+    margin-left: 2%;
+    letter-spacing: 0;
+}
+
+/* navigation bar */
+.nav-bar {
+    font-size: 20px;
+}
+
+.horizontal-bar{
+    list-style-type: none;
+    margin-top: -2%;
+    margin-right: 2%;
+    text-align: right;
+    letter-spacing: 0;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0.5%;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* unvisited link */
+.nav-link:link {
+    color: black;
+}
+  
+  /* visited link */
+.nav-link:visited {
+}
+  
+  /* mouse over link */
+.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+  /* selected link */
+.nav-link:active {
+    font-weight: bold;
+}
+
+/* projects grid */
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    margin: 2%;
+}
+
+.image {
+    max-width: 30%;
+    max-height: 30%;
+    /*width: 320px;
+    height: 320px;*/
+    padding: 1%;
+}
+
+.image:hover
+{
+    opacity: 0.3;
+}
+
+/* about me */
+.about-me {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 6%;
+    font-size: 20px;
+}
+
+.blurb {
+    margin-top: 25%;
+    margin-right: 6%;
+}
+
+.me-pic {
+    width: 400px;
+    height: 400px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/* responsive to different screen sizes */
+@media only screen and (max-width: 800px)  {
+    .image {
+        max-width: 45%;
+        max-height: 45%;
+        margin-left: 2%;
+    }
+
+
+    .about-me {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blurb {
+        margin-top: 4%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .image{
+        max-width: 80%;
+        max-height: 80%;
+        margin-left: 8%;
+    }
+}

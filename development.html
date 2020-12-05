@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title> Elaine Chen - Development </title>
+    <link rel="stylesheet" href="development-index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <div class = "header-wrap">
+      <div class = "s-header">
+        <div class="no-typewriter">
+          <a href = "home.html" style = "text-decoration: none; color: black"> <h1> Elaine Chen </h1> </a>
+        </div>
+      </div>
+  
+      <!-- Tagline -->
+      <div class = "subheader"> CS + ENGLISH @BROWN UNIVERSITY </div>
+      
+      <!-- Nav Bar -->
+      <div class = "nav-bar">
+        <ul class = "horizontal-bar">
+          <li class = "nav-item"><a href="home.html" class = "nav-link" style = "font-weight: 800">Work</a></li>
+          <li class = "nav-item"><a href="about.html" class = "nav-link">About</a></li>
+        </ul>
+      </div>
+    </div>
+  
+      <!-- PROJECT SPECIFIC -->
+      <div class = "body">
+    <!-- PROJECT SPECIFIC -->
+    <div class = "header"> React Development Project </div>
+
+    <!-- Preview -->
+    <div class = "intro-section">
+      <figure> 
+        <a href = "https://dry-dawn-68818.herokuapp.com" style = "text-decoration: none"><img src = "development-heroine.png" alt = "The Heroine's Bookshelf" class = "intro-image"></a>
+        <figcaption class = "section-content"> Finished Application </figcaption>
+      </figure>
+    </div>
+
+    <!-- What Is Explanation -->
+    <div class = "section-header"> What Is React? </div>
+    <div class = "section-content">
+      React is an open-source JavaScript library used to dynamically
+      render webpages. It operates on a component model, where components
+      store data in their state and pass data to one another through
+      function calls and upon instantiation.
+    </div>
+
+    <!-- Project Goal -->
+    <div class = "section-header"> Project Goal </div>
+    <div class = "section-content">
+      The goal of this project was to create a list interface using
+      React that supports filtering, sorting, and aggregation. I chose
+      to make a virtual bookshelf application, where a user can filter
+      books by genre and author, sort by publication date, and see
+      the total word count of the books they have selected.
+    </div>
+
+
+    <!-- Usability Principles Used -->
+    <div class = "section-header"> Usability Principles </div>
+    <div class = "section-content"> 
+      When designing my site, I considered Jakob Nielsen's 10 usability heuristics:
+      <ul>
+        <li> Visibility of System Status
+          <ul>
+            <li> Users can see which books have been added to the total word count </li>
+            <li>
+              Users are shown an alert window when they add or remove books from 
+              their total word count list
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li> Match Between System and Real World
+          <ul>
+            <li> 
+              Filters mimic a user's conceptual model  of a bookstore or library:
+              one first goes to a specific genre or author
+              and then views books sorted alphabetically by title
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li> User Control and Freedom
+          <ul>
+            <li> Users can both add and remove books from the total word count section </li>
+          </ul>
+        </li>
+        <br>
+        <li> Consistency and Standards
+          <ul>
+            <li>
+              The total word count section is referred to as "Books List"
+              every time it is referenced.
+            </li>
+            <li> Filter labels match the labels shown on the books in the grid </li>
+          </ul>
+        </li>
+        <br>
+        <li> Help Users Recognize, Diagnose, and Recover from Errors
+          <ul>
+            <li> Users can undo filters by clicking "All" </li>
+            <li> Users can undo adding a book to their books list by clicking "Remove from Books List" </li>
+          </ul>
+        </li>
+        <br>
+        <li> Error Prevention
+          <ul>
+            <li>
+              Users are prevented from selecting multiple authors or genres at once,
+              since a book cannot have more than one author and main genre
+            </li>
+            <li>
+              Users are prevented from adding a book to their total word count list
+              more than once and are shown an error message if they try to do so
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li> Recognition Rather than Recall
+          <ul>
+            <li> The filter bar is clearly visible to the user </li>
+            <li> 
+              The "Add to Books List" and "Remove from Books List" buttons are clearly
+              displayed
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li> Flexibility and Efficiency of Use
+          <ul>
+            <li>
+              A user can either filter for exactly which genre and/or author's books
+              they want to see or explore all the books available by scrolling through
+              the grid
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li> Aesthetic and Minimalist Design
+          <ul>
+            <li> Only neccessary text is shown, and every piece of text has a purpose </li>
+          </ul>
+        </li>
+        <br>
+        <li> Help and Documentation
+          <ul>
+            <li>
+              While no instructions section is provided, button and filter labels are
+              imperative calls to action that tell the user their task
+            </li>
+          </ul>
+        </li>
+      </ul>
+      See the finished product <a href="https://dry-dawn-68818.herokuapp.com">here</a>!
+    </div>
+
+    <!-- Takeaways -->
+    <div class = "section-header"> Takeaways </div>
+    <div class = "section-content">
+      
+    </div>
+
+    </div>
+  </body>
+</html>

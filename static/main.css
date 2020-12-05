@@ -1,0 +1,90 @@
+/* Feel free to modify anything in this file.*/
+html body {
+	background-color: lightblue;
+}
+
+header {
+  font-family: "Raleway";
+  color: darkblue;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+.header-b {
+  font-family: "Raleway";
+  color: darkblue;
+}
+
+/**/
+.vendor-wrapper {
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.vendor-wrapper-b {
+	justify-content: left;
+  padding-left: 40px;
+  padding-right: 40px;
+	padding-top: 20px;
+  padding-bottom: 20px;
+  border-color: dodgerblue;
+  border-style: solid;
+  border-width: 5px;
+}
+
+/**/
+.vendor-photo {
+	max-width: 200px;
+	max-height: 150px;
+	padding-right: 20px;
+}
+
+.vendor-book-button {
+	font-size: 2em;
+}
+
+/**/
+.content-pane {
+  padding: 40px;
+  font-family: "Raleway";
+  color: darkblue;
+}
+
+.content-pane-b {
+  padding: 40px;
+  display: grid;
+  grid-row: auto auto;
+  grid-template-columns: 600px 600px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  font-family: "Raleway";
+  color: darkblue;
+}
+
+/**/
+.fa-stack[data-count]:after{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  content: attr(data-count);
+  font-size: 40%;
+  padding: .6em;
+  border-radius: 999px;
+  line-height: .75em;
+  color: white;
+  color: #DF0000;
+  text-align: center;
+  min-width: 2em;
+  font-weight: bold;
+  background: white;
+  border-style: solid;
+}
+.fa-circle {
+  color: #DF0000;
+}
+
+.red-cart {
+	color: #DF0000;
+}
